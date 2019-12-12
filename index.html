@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Sign Up</title>
+	<title>Welcome to persons cloud database</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content="Nurbek Ismoilov | https://t.me/noreck77">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -10,65 +10,93 @@
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 </head>
 <body>
-	<div class="container-lg vertical-center">
-		<form class="regForm">
-		  <p class="h3 mb-4 text-center">Sign Up</p>
-		  <div class="form-row profileImageParent">
-		  	<div class="profileImage"></div>
-		  	<div class="profileImageChange"></div>
-		  	<input type="file" hidden="hidden" id="chooseProfilePicture">
+	
+	<div class="container-lg">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		  <a class="navbar-brand" href="#">VeryUSER.ly</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav ml-auto">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Profile
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="#">Sign In</a>
+		          <a class="dropdown-item" href="#">SignUp</a>
+		          <a class="dropdown-item d-none" href="#">My information</a>
+		          <div class="dropdown-divider d-none"></div>
+		          <a class="dropdown-item d-none" href="#">Logout</a>
+		        </div>
+		      </li>
+		      <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          <img class="langIco" src="img/lang/eng.png" alt="">ENG
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item active" href="#"><img class="langIco" src="img/lang/eng.png" alt="">ENG</a>
+		          <a class="dropdown-item" href="#"><img class="langIco" src="img/lang/rus.png" alt="">RUS</a>
+		        </div>
+		      </li>
+		    </ul>
 		  </div>
-		  <div class="form-row">
-		  	<div class="form-group col-md-6">
-		      <label for="inputFirstName">First Name</label>
-		      <input type="text" class="form-control" id="inputEmail" placeholder="Your first name">
+		</nav>
+	</div>
+
+
+	<div class="container-lg">
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		  <ol class="carousel-indicators">
+		    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+		    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+		    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+		    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+		    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+		    <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+		  </ol>
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
 		    </div>
-		    <div class="form-group col-md-6">
-		      <label for="inputLastName">Last Name</label>
-		      <input type="text" class="form-control" id="inputEmail" placeholder="Your last name">
+		    <div class="carousel-item">
 		    </div>
-		    <div class="form-group col-md-12">
-		      <label for="inputEmail">Email</label>
-		      <input type="email" class="form-control" id="inputEmail" placeholder="your@example.com">
+		    <div class="carousel-item">
 		    </div>
-		    <div class="form-group col-md-6">
-		      <label for="inputPassword">Password</label>
-		      <input type="password" class="form-control" id="inputPassword" placeholder="(6 characters minimum)">	
-		      <small id="passwordHelpBlock" class="form-text text-muted">
-			    Must contain letters, numbers and minimum an upper case letter.
-			  </small>
+		    <div class="carousel-item">
 		    </div>
-		    <div class="form-group col-md-6">
-		      <label for="inputEmail">Confirm password</label>
-		      <input type="password" class="form-control" id="inputEmail" placeholder="">
+		    <div class="carousel-item">
 		    </div>
-		  </div>
-		  <div class="form-row">
-		    <div class="form-group col-md-7">
-		      <label for="inputZip">Birthday</label>
-		      <input type="date" class="form-control" value="2011-08-19" id="example-date-input">
-		    </div>
-		    <div class="form-group col-md-5">
-		      <label for="Gender">Gender</label>
-		      <select id="inputState" class="form-control">
-		        <option selected>Male</option>
-		        <option>Female</option>
-		      </select>
+		    <div class="carousel-item">
 		    </div>
 		  </div>
-		  <div class="form-group">
-		    <div class="form-check">
-		      <input class="form-check-input" type="checkbox" id="gridCheck">
-		      <label class="form-check-label" for="gridCheck">
-		        I agree to the processing of personal data
-		      </label>
-		    </div>
+		  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+		</div>
+	</div>
+
+	<div class="container-lg">
+		<div class="card w-100 textRandom">
+		  <div class="card-body">
+		    <h5 class="card-title">Privacy Policy</h5>
+		    <p class="card-text">A privacy policy is a statement or a legal document (in privacy law) that discloses some or all of the ways a party gathers, uses, discloses, and manages a customer or client's data. It fulfils a legal requirement to protect a customer or client's privacy. Personal information can be anything that can be used to identify an individual, not limited to the person's name, address, date of birth, marital status, contact information, ID issue, and expiry date, financial records, credit information, medical history, where one travels, and intentions to acquire goods and services. In the case of a business it is often a statement that declares a party's policy on how it collects, stores, and releases personal information it collects. It informs the client what specific information is collected, and whether it is kept confidential, shared with partners, or sold to other firms or enterprises. Privacy policies typically represent a broader, more generalized treatment, as opposed to data use statements, which tend to be more detailed and specific.</p>
+		    <a href="https://en.wikipedia.org/wiki/Privacy_policy" class="btn btn-custom">Learn more...</a>
 		  </div>
-		  <button type="submit" class="btn btn-primary">Sign in</button>
-		</form>
+		</div>
 	</div>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="script/main.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </body>
 </html>

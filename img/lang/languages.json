@@ -1,0 +1,62 @@
+{
+  "en": 
+  {
+    "menu":["Home","Profile"],
+    "home":
+    {
+      "cardTitle": "Privacy Policy",
+      "cardText": "A privacy policy is a statement or a legal document (in privacy law) that discloses some or all of the ways a party gathers, uses, discloses, and manages a customer or client's data. It fulfils a legal requirement to protect a customer or client's privacy. Personal information can be anything that can be used to identify an individual, not limited to the person's name, address, date of birth, marital status, contact information, ID issue, and expiry date, financial records, credit information, medical history, where one travels, and intentions to acquire goods and services. In the case of a business it is often a statement that declares a party's policy on how it collects, stores, and releases personal information it collects. It informs the client what specific information is collected, and whether it is kept confidential, shared with partners, or sold to other firms or enterprises. Privacy policies typically represent a broader, more generalized treatment, as opposed to data use statements, which tend to be more detailed and specific.",
+      "cardButton": "Learn more.."
+    },
+    "signUp":
+    {
+      "formTitle": "Sign Up",
+      "firstNameTitle": "First Name",
+      "firstNamePlaceholder": "Your first name",
+      "lastNameTitle": "Last Name",
+      "lastNamePlaceholder": "Your last name",
+      "emailTitle": "Email",
+      "emailPlaceholder": "your@example.com",
+      "passwordTitle": "Password",
+      "passwordPlaceholder": "(6 characters minimum)",
+      "passwordHelper": "Must contain letters, numbers and minimum an upper case letter.",
+      "confirmPasswordTitle": "Confirm password",
+      "birthdayTitle": "Date birth",
+      "genderTitle": "Gender",
+      "genderMale": "Male",
+      "genderFemale": "Female",
+      "agreementChecker": "I agree to the processing of personal data",
+      "signUpButtonText": "Sign Up"
+    }
+  },
+  "ru": 
+  {
+    "menu":["Главная","Профиль"],
+    "home": 
+    {
+      "cardTitle": "Политика конфиденциальности",
+      "cardText": "Политика конфиденциальности - это заявление или юридический документ (в законе о конфиденциальности), который раскрывает некоторые или все способы сбора, использования, раскрытия и управления данными клиента или клиента. Он выполняет юридическое требование по защите конфиденциальности клиента или клиента. Личная информация может быть любой, которая может быть использована для идентификации личности, не ограничиваясь именем, адресом, датой рождения, семейным положением, контактной информацией, выдачей удостоверения личности и датой истечения срока действия, финансовыми записями, кредитной информацией, историей болезни, где путешествует, и намерения приобрести товары и услуги. В случае бизнеса это часто заявление, в котором объявляется политика стороны в отношении того, как она собирает, хранит и публикует собираемую ею личную информацию. Он информирует клиента о том, какая конкретная информация собрана и является ли она конфиденциальной, передается партнерам или продается другим фирмам или предприятиям. Политики конфиденциальности, как правило, представляют собой более широкий и более общий подход, в отличие от заявлений об использовании данных, которые, как правило, являются более подробными и конкретными. ",
+      "cardButton": "Узнать больше.."
+    },
+    "signUp":
+    {
+      "formTitle": "Регистрация",
+      "firstNameTitle": "Имя",
+      "firstNamePlaceholder": "Введите ваше имя",
+      "lastNameTitle": "Фамилия",
+      "lastNamePlaceholder": "Введите вашу фамилию",
+      "emailTitle": "Почта",
+      "emailPlaceholder": "your@example.com",
+      "passwordTitle": "Пароль",
+      "passwordPlaceholder": "(минимум 6 символов)",
+      "passwordHelper": "Должна содержать буквы, числа и минимум одну прописную букву.",
+      "confirmPasswordTitle": "Подтвердите пароль",
+      "birthdayTitle": "Дата рождения",
+      "genderTitle": "Пол",
+      "genderMale": "Мужской",
+      "genderFemale": "Женский",
+      "agreementChecker": "Согласен на обработку персональных данных",
+      "signUpButtonText": "Sign Up"
+    }
+  }
+}
