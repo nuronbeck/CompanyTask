@@ -21,27 +21,28 @@
 		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 		    <ul class="navbar-nav ml-auto">
 		      <li class="nav-item active">
-		        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		        <a class="nav-link" href="index.html" id="menuHomeLink">Home <span class="sr-only">(current)</span></a>
 		      </li>
 		      <li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		        <a class="nav-link dropdown-toggle" href="#" id="menuProfileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		          Profile
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="#">Sign In</a>
-		          <a class="dropdown-item" href="#">SignUp</a>
+		          <a class="dropdown-item" href="#" id="menuSignInLink">Sign In</a>
+		          <a class="dropdown-item" href="signUp.html" id="menuSignUpLink">Sign
+		          Up</a>
 		          <a class="dropdown-item d-none" href="#">My information</a>
 		          <div class="dropdown-divider d-none"></div>
 		          <a class="dropdown-item d-none" href="#">Logout</a>
 		        </div>
 		      </li>
 		      <li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		        <a class="nav-link dropdown-toggle" href="#" id="langDropDown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		          <img class="langIco" src="img/lang/eng.png" alt="">ENG
 		        </a>
-		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item active" href="#"><img class="langIco" src="img/lang/eng.png" alt="">ENG</a>
-		          <a class="dropdown-item" href="#"><img class="langIco" src="img/lang/rus.png" alt="">RUS</a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="langsList">
+		          <a class="dropdown-item languageChoose" href="#" id="languageENG"><img class="langIco" src="img/lang/eng.png" alt="">ENG</a>
+		          <a class="dropdown-item languageChoose" href="#" id="languageRUS"><img class="langIco" src="img/lang/rus.png" alt="">RUS</a>
 		        </div>
 		      </li>
 		    </ul>
@@ -89,8 +90,8 @@
 	<div class="container-lg">
 		<div class="card w-100 textRandom">
 		  <div class="card-body">
-		    <h5 class="card-title">Privacy Policy</h5>
-		    <p class="card-text">A privacy policy is a statement or a legal document (in privacy law) that discloses some or all of the ways a party gathers, uses, discloses, and manages a customer or client's data. It fulfils a legal requirement to protect a customer or client's privacy. Personal information can be anything that can be used to identify an individual, not limited to the person's name, address, date of birth, marital status, contact information, ID issue, and expiry date, financial records, credit information, medical history, where one travels, and intentions to acquire goods and services. In the case of a business it is often a statement that declares a party's policy on how it collects, stores, and releases personal information it collects. It informs the client what specific information is collected, and whether it is kept confidential, shared with partners, or sold to other firms or enterprises. Privacy policies typically represent a broader, more generalized treatment, as opposed to data use statements, which tend to be more detailed and specific.</p>
+		    <h5 class="card-title" id="homePageContentPrivacyTitle">Privacy Policy</h5>
+		    <p class="card-text" id="homePageContentPrivacyText">A privacy policy is a statement or a legal document (in privacy law) that discloses some or all of the ways a party gathers, uses, discloses, and manages a customer or client's data. It fulfils a legal requirement to protect a customer or client's privacy. Personal information can be anything that can be used to identify an individual, not limited to the person's name, address, date of birth, marital status, contact information, ID issue, and expiry date, financial records, credit information, medical history, where one travels, and intentions to acquire goods and services. In the case of a business it is often a statement that declares a party's policy on how it collects, stores, and releases personal information it collects. It informs the client what specific information is collected, and whether it is kept confidential, shared with partners, or sold to other firms or enterprises. Privacy policies typically represent a broader, more generalized treatment, as opposed to data use statements, which tend to be more detailed and specific.</p>
 		    <a href="https://en.wikipedia.org/wiki/Privacy_policy" class="btn btn-custom">Learn more...</a>
 		  </div>
 		</div>
@@ -98,5 +99,6 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script src="script/header_functions.js"></script>
 </body>
 </html>

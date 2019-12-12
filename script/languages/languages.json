@@ -1,7 +1,7 @@
 {
-  "ENG": 
+  "en": 
   {
-    "menu":["Home","Profile", "Sign In", "Sign Up"],
+    "menu":["Home","Profile"],
     "home":
     {
       "cardTitle": "Privacy Policy",
@@ -29,9 +29,9 @@
       "signUpButtonText": "Sign Up"
     }
   },
-  "RUS": 
+  "ru": 
   {
-    "menu":["Главная","Профиль", "Авторизация", "Регистрация"],
+    "menu":["Главная","Профиль"],
     "home": 
     {
       "cardTitle": "Политика конфиденциальности",
@@ -56,7 +56,7 @@
       "genderMale": "Мужской",
       "genderFemale": "Женский",
       "agreementChecker": "Согласен на обработку персональных данных",
-      "signUpButtonText": "Зарегистрироваться"
+      "signUpButtonText": "Sign Up"
     }
   }
 }

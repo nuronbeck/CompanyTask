@@ -20,28 +20,29 @@
 
 		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 		    <ul class="navbar-nav ml-auto">
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		      <li class="nav-item active">
+		        <a class="nav-link" href="index.html" id="menuHomeLink">Home <span class="sr-only">(current)</span></a>
 		      </li>
-		      <li class="nav-item dropdown active">
-		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		      <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="menuProfileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		          Profile
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="#">Sign In</a>
-		          <a class="dropdown-item active" href="#">SignUp</a>
-		          <a class="dropdown-item" href="#">My information</a>
-		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="#">Logout</a>
+		          <a class="dropdown-item" href="#" id="menuSignInLink">Sign In</a>
+		          <a class="dropdown-item" href="signUp.html" id="menuSignUpLink">Sign
+		          Up</a>
+		          <a class="dropdown-item d-none" href="#">My information</a>
+		          <div class="dropdown-divider d-none"></div>
+		          <a class="dropdown-item d-none" href="#">Logout</a>
 		        </div>
 		      </li>
 		      <li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		        <a class="nav-link dropdown-toggle" href="#" id="langDropDown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		          <img class="langIco" src="img/lang/eng.png" alt="">ENG
 		        </a>
-		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item active" href="#"><img class="langIco" src="img/lang/eng.png" alt="">ENG</a>
-		          <a class="dropdown-item" href="#"><img class="langIco" src="img/lang/rus.png" alt="">RUS</a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="langsList">
+		          <a class="dropdown-item languageChoose" href="#" id="languageENG"><img class="langIco" src="img/lang/eng.png" alt="">ENG</a>
+		          <a class="dropdown-item languageChoose" href="#" id="languageRUS"><img class="langIco" src="img/lang/rus.png" alt="">RUS</a>
 		        </div>
 		      </li>
 		    </ul>
@@ -49,9 +50,11 @@
 		</nav>
 	</div>
 
+
+
 	<div class="container-lg vertical-center">
 		<form class="regForm">
-		  <p class="h3 mb-4 text-center">Sign Up</p>
+		  <p class="h3 mb-4 text-center" id="signUpFormTitleName">Sign Up</p>
 		  <div class="form-row profileImageParent">
 		  	<div class="profileImage"></div>
 		  	<div class="profileImageChange"></div>
@@ -59,37 +62,37 @@
 		  </div>
 		  <div class="form-row">
 		  	<div class="form-group col-md-6">
-		      <label for="inputFirstName">First Name</label>
-		      <input type="text" class="form-control" id="inputEmail" placeholder="Your first name">
+		      <label for="inputFirstName" id="labelFirstNameTitle">First Name</label>
+		      <input type="text" class="form-control" id="inputFirstName" placeholder="Your first name">
 		    </div>
 		    <div class="form-group col-md-6">
-		      <label for="inputLastName">Last Name</label>
-		      <input type="text" class="form-control" id="inputEmail" placeholder="Your last name">
+		      <label for="inputLastName" id="labelLastNameTitle">Last Name</label>
+		      <input type="text" class="form-control" id="inputLastName" placeholder="Your last name">
 		    </div>
 		    <div class="form-group col-md-12">
-		      <label for="inputEmail">Email</label>
+		      <label for="inputEmail"  id="labelEmailTitle">Email</label>
 		      <input type="email" class="form-control" id="inputEmail" placeholder="your@example.com">
 		    </div>
 		    <div class="form-group col-md-6">
-		      <label for="inputPassword">Password</label>
+		      <label for="inputPassword" id="labelPasswordTitle">Password</label>
 		      <input type="password" class="form-control" id="inputPassword" placeholder="(6 characters minimum)">	
-		      <small id="passwordHelpBlock" class="form-text text-muted">
+		      <small class="form-text text-muted" id="passwordHelperTitle">
 			    Must contain letters, numbers and minimum an upper case letter.
 			  </small>
 		    </div>
 		    <div class="form-group col-md-6">
-		      <label for="inputEmail">Confirm password</label>
-		      <input type="password" class="form-control" id="inputEmail" placeholder="">
+		      <label for="inputConfirmPassword" id="labelConfirmPasswordTitle">Confirm password</label>
+		      <input type="password" class="form-control" id="inputConfirmPassword" placeholder="">
 		    </div>
 		  </div>
 		  <div class="form-row">
 		    <div class="form-group col-md-7">
-		      <label for="inputZip">Birthday</label>
-		      <input type="date" class="form-control" value="2011-08-19" id="example-date-input">
+		      <label for="inputDateBirth" id="labelDateBirthTitle">Date birth</label>
+		      <input type="date" class="form-control" value="2011-08-19" id="inputDateBirth">
 		    </div>
 		    <div class="form-group col-md-5">
-		      <label for="Gender">Gender</label>
-		      <select id="inputState" class="form-control">
+		      <label for="selectGender" id="labelGenderTitle">Gender</label>
+		      <select id="selectGender" class="form-control">
 		        <option selected>Male</option>
 		        <option>Female</option>
 		      </select>
@@ -98,12 +101,12 @@
 		  <div class="form-group">
 		    <div class="form-check">
 		      <input class="form-check-input" type="checkbox" id="gridCheck">
-		      <label class="form-check-label" for="gridCheck">
+		      <label class="form-check-label" for="agreementCheck" id="labelSignUpAgreementTitle">
 		        I agree to the processing of personal data
 		      </label>
 		    </div>
 		  </div>
-		  <button type="submit" class="btn btn-primary">Sign Up</button>
+		  <button type="submit" class="btn btn-primary" id="signUpButton">Sign Up</button>
 		</form>
 	</div>
 
@@ -111,5 +114,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
 	<script src="script/main.js"></script>
+	<script src="script/header_functions.js"></script>
 </body>
 </html>
